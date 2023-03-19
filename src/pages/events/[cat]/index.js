@@ -9,7 +9,7 @@ export default function EventCategoriesPage({ categoryId, events }) {
       <div className='grid grid-cols-4 gap-4'>
         {events.map(function (event) {
           return (
-            <div>
+            <div key={event.id}>
               <Link href={`/events/${categoryId}/${event.id}`}>
                 <Image src={event.image} alt={event.title} width={300} height={170} />
                 <h2 className='text-lg my-2'>{event.title}</h2>

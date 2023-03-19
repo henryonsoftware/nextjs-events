@@ -41,7 +41,7 @@ export default function EventDetailPage({ cat, id, event }) {
   return (
     <Layout>
       <div className="md:w-6/12 mx-auto">
-        <Image src={event.image} width={700} height={300} />
+        <Image src={event.image} width={700} height={300} alt={event.title} />
         <h3 className='text-3xl my-4 font-bold'>{event.title}</h3>
         <p className='mb-2'>{event.description}</p>
         <form action="" method="POST" onSubmit={handleSubmit}>
